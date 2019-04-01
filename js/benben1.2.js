@@ -18,8 +18,8 @@
 	var blocks = {
 		en:[
 			[' ', 'Calibrate', 'calibrate'],
-            //[' ', 'LED %d.led %d.onoff','runLed','ALL','ON'],
-			//[' ', 'colorLight %d.color','colorLed','BLACK'],
+			[' ', 'LED %d.led %d.onoff','runLed','ALL','ON'],
+			[' ', 'colorLight %d.flightDir','colorLed','BLACK'],
 			[' ', 'buzzer buzz %d.beep','beeper',"OFF"],
             [' ', 'Arm Flight','armFlight'],
 			[' ', 'Disarm Flight','disarmFlight'],
@@ -43,8 +43,8 @@
 		zh:[
 			//[' ', '校准', 'calibrate'],
 			[' ', '懸停', 'calibrate'],
-            //[' ', '让LED %d.led 灯 %d.onoff','runLed','所有','亮'],
-			//[' ', '让彩色灯亮 %d.color','colorLed','黑色'],
+            [' ', '让LED灯 %d.onoff','runLed','亮'],
+			[' ', '讓飛機向 %d.flightDir 翻轉','colorLed','前邊'],
 			[' ', '讓蜂鳴器 %d.beep','beeper','關閉'],
 			[' ', '電機解鎖','armFlight'],
 			[' ', '電機上鎖','disarmFlight'],
@@ -83,7 +83,7 @@
 			speed:["0","20","50","80","100","125"],
 		},
 		zh:{
-			onoff: ['亮', '滅'],
+			onoff: ['亮', '滅','快閃','慢閃','呼吸'],
             led:['所有','A','B','C','D'],
             motorQuad:["左前方","右前方","左後方","右後方","所有"],
             motorPWM:['0','30','60','90'],
